@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background-color: #ddd;
+
+}
+
+.testomonial {
+    margin: 100px auto;
+    max-width: 1440px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+
+}
+
+.purple_card {
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+}
+
+.purple_card header {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+
+}
+
+.purple_card header .card_info h3 {
+    font-size: 15px;
+}
+
+.purple_card header .card_info p {
+    font-size: 15px;
+    opacity: 50%;
+}
+
+.purple_card header img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #996ed9;
+    margin-right: 20px;
+}
+.CardLead{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin-bottom: 10px;
+}
+.cardbody{
+    font-size: 15px;
+    line-height: 1rem;
+    opacity: 60%;
+}
+
+
+/* .card--bg-purple{
+    background-color: hsl(263, 55%, 52%);
+    background: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+
+} */
+
+#pbgcolor{
+    background: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(263, 55%, 52%);
+    color: #fff;
+    background-position: top 10px right 100px;
+    
+}
+
+#bgblackBlue{
+    background-color: hsl(219,29%, 14%);
+    color: #fff;
+
+
+}
+#bgblueGrey{
+background-color: hsl(217,19%, 35%);
+color: #fff;
+}
+.purple_card:nth-of-type(1){
+    grid-column: 1/3;
+}
+.purple_card:nth-of-type(5){
+    grid-column: 2/4;
+    grid-row: 2;
+}
+.purple_card:nth-of-type(3){
+    grid-row: 1/3;
+    grid-column: 4;
+}
+
+@media (max-width:768px) {
+    .testomonial {
+     
+   grid-template-columns: 1fr;
+    }
+
+    .purple_card:nth-of-type(1){
+        grid-column: 1;
+    }
+    .purple_card:nth-of-type(5){
+        grid-column: 1;
+        grid-row: 5;
+    }
+    .purple_card:nth-of-type(3){
+        grid-row: 3;
+        grid-column: 1;
+    }
+    
+}
